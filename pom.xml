@@ -22,13 +22,14 @@
   </distributionManagement>   
    
   <scm>
-    <connection>scm:git:ssh://github.com/jenkinsci/hp-operations-orchestration-automation-execution-plugin.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/jenkinsci/hp-operations-orchestration-automation-execution-plugin.git</developerConnection>
-    <url>https://github.com/jenkinsci/hp-operations-orchestration-automation-execution-plugin</url>
+    <connection>scm:git:ssh://github.com/jenkinsci/hp-operations-orchestration-plugin.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/jenkinsci/hp-operations-orchestration-plugin.git</developerConnection>
+    <url>https://github.com/jenkinsci/hp-operations-orchestration-plugin</url>
   </scm>
   
   <developers>
     <developer>
+	  <id>nathang</id>	
       <name>Nathan Grunzweig</name>
       <email>nathan.grunzweig@hp.com</email>
     </developer>
