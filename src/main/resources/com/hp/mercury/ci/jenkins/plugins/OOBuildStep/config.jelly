@@ -256,9 +256,8 @@
         </j:if>
 
     </select>
-    <td><a id="refreshButton${buildStepAjaxId}" onClick="refreshServerFlows('${buildStepAjaxId}',true);"><img alt="title" src="${app.getRootUrl()}plugin/oo/images/refresh.png"/></a></td>
+    <td><a id="refreshButton${buildStepAjaxId}" onClick="refreshServerFlows('${buildStepAjaxId}',true);"><img alt="title" src="${app.getRootUrl()}plugin/hp-operations-orchestration-automation-execution-plugin/images/refresh.png"/></a></td>
   </f:entry>
-
 
   <f:entry title="Set Parameter Values for Flow on Server" >
     <div id="argsContainer${buildStepAjaxId}">
@@ -283,12 +282,29 @@
         </table>
         </f:repeatable>
     </div>
+    <script type="text/javascript">
+        function hideshow() {
+            var showhide=document.getElementById('text');
+            if(showhide.style.visibility=="hidden")
+            {
+                showhide.style.visibility="visible";
+            }
+            else{
+                showhide.style.visibility="hidden";
+            }
+        }
+    </script>
+
+
+    <div id="abc" align="right">
+         <f:Button value="Delete"/>
+    </div>
 
   </f:entry>
 
     <tr>
-           <td class="setting-leftspace"><st:nbsp/></td>
-       <td class="setting-name" colspan="3">
+        <td class="setting-leftspace"><st:nbsp/></td>
+        <td class="setting-name" colspan="3">
         <input name="changeBuildResult" checked="${instance.getChangeBuildResult()}" type="checkbox"
         onClick="setVisible('ooStepResult${buildStepAjaxId}', this.checked)"/>
         Change Build Result Status...
